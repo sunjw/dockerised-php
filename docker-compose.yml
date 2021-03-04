@@ -17,6 +17,7 @@ services:
         container_name: php-fpm
         volumes:
             - ./htdocs:/www/htdocs
+            - ./php_data:/mnt/php_data
         networks:
             - code-network
         user: "$UID"
