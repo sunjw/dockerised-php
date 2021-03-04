@@ -16,7 +16,7 @@ services:
         image: php:fpm
         container_name: php-fpm
         volumes:
-            - ./code:/www/htdocs
+            - ./htdocs:/www/htdocs
         networks:
             - code-network
         user: "$UID"
