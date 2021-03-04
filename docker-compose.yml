@@ -16,6 +16,7 @@ services:
         image: php:7.4-fpm
         container_name: php-fpm
         volumes:
+            - ./php.ini:/usr/local/etc/php/php.ini
             - ./htdocs:/www/htdocs
             - ./php_data:/mnt/php_data
         networks:
